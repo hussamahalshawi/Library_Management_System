@@ -1,5 +1,5 @@
 {% extends 'student_navbar.html' %}
-
+{% load static %}
 {% block title %} Profile {% endblock %}
 
 {% block css %}
@@ -32,7 +32,7 @@ background: #212529b8;
         <div class="row">
             <div class="col-md-4">
                 <div class="profile-img">
-                    <img src="{{user.student.image.url}}" alt="" width="310px" height="270px">
+                    <img src="{% static user.student.image %}" alt="" width="310px" height="270px">
                 </div>
             </div>
             <div class="col-md-8">
